@@ -1,0 +1,6 @@
+hrs = input("enter hours: ")
+rates = input("enter rates: ")
+pay  = int(hrs) * float(rates)
+payi = int(hrs) * int(rates)
+print("float pay:",pay)
+print("integer pay:",payi)
