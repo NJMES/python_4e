@@ -1,2 +1,4 @@
 # python_4e
- python for everyone, freecodecamp.com 
+
+ freecodecamp.com | Scientific Computing with Python 
+ Python for everyone. 
