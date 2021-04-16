@@ -1,8 +1,8 @@
-
-#def - define function
+'''
+##def - define function
 - def create a code and record it. 
 
-'''def sample
+##def sample
 def thing() :
     print('hello')
     print('fun')
@@ -17,9 +17,9 @@ fun
 zip
 hello
 fun
-'''
+###
 
-#python functions. 
+##python functions. 
 - there are 2 kinds of functions in python.
     - build-in functions that are  provided as part of python.
         #print(), input(), type(), float(), int() ...
@@ -33,4 +33,8 @@ fun
 - we define a Fucntion using the def reserved word.
 - we call/invoke the function by using the function name, parentheses, and argument in an expression.
     # def X() :
-    
+
+#04 function A question
+#What is the purpose of the "def" keyword in Python?
+#ans: It indicates the start of a function, and the following indented section of code is to be stored for later.
+'''
