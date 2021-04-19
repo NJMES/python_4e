@@ -13,4 +13,3 @@ link: <https://www.freecodecamp.org/learn/scientific-computing-with-python/pytho
         2. for thing in data:
            1. look for something or do something to each entry separately, update a variable
         3. look at the varibale
-
