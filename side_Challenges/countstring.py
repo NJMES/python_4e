@@ -2,9 +2,11 @@
 #characters in a string.
 
 word=input('entertext:', )
-char='abcdefghijklmnopqrstuv'
 
 for char in word:
     ccount = word.count(char)
-    if ccount>1 :
+    charc = 0
+    if ccount>1 and charc == 0 :
         print(char, ccount)
+        charc = charc + 1
+    

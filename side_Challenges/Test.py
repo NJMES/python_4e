@@ -22,5 +22,14 @@
     even.apend(x)
     space = space -1  
 '''
-print('Hello, World.')
-input_string = input('Welcome to 30 Days of Code!')
+#print('Hello, World.')
+#input_string = input('Welcome to 30 Days of Code!')
+
+meal_cost = float(20.75)
+tip_percent = int(10)
+tax_percent = int(3)
+
+tip_percent = tip_percent * (meal_cost/100)
+tax_percent =(tax_percent/100) * tip_percent
+total = meal_cost + tip_percent + tax_percent
+print(round(total)) #round up.

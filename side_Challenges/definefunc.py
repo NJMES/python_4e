@@ -27,30 +27,12 @@ Example Test Case:
 2nd Input: Banana
 Output: 4
 '''
-'''
-def count(tsent,fword):
-    msent = str(tsent)
-    for x in msent:
-        spchar = ['.',',','_','-','{SPACE}']
-        if x in spchar:
-            msent.replace(x,'')
-        else:
-            prsent1 = ''.join(msent.split()) 
-            print(prsent1)
-            prsent2 =  prsent1.lower()
-            prcount = prsent2.count(fword.lower())
-            return prcount
+def count(tsent, fword):
+    tsent = tsent.lower().replace('.','').replace('_', '').replace('-','').replace(',','').replace(' ','')
+    o = tsent.count(fword.lower())
+    return o
 
-tsent = input('enter string:', )
-fword = input('count this word:',)
-
-print(count())
-'''
-msent = 'a.-bams,-_'
-#'a s-j.sba nanananaok_-.kSjaB a nan a_n.A-n_sKe-Kd.ab.A-n A .-n.adsba_-.Na-_nAo.feas.f-_fas'
-
-for x in msent:
-    spchar = ['.',',','_','-',' ']
-    if x in spchar:
-        msent.replace(x,'')
-print(msent)
+t = input('Ent3r y0uR W3irD +3Xt H3re:', )
+f = input('What you looking for:', )
+output = count(t,f)
+print(t.replace(' ',''),f,output)
