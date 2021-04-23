@@ -32,7 +32,8 @@ def count(tsent, fword):
     o = tsent.count(fword.lower())
     return o
 
-tsent = input('Ent3r y0uR W3irD +3Xt H3re:', )
-fword = input('What you looking for:', )
-output = count(tsent,fword)
-print(' *',fword,'*  appeared  *',output,'*  times in your entry.')
+if __name__=='__main__':
+    tsent = input('Ent3r y0uR W3irD +3Xt H3re:', )
+    fword = input('What you looking for:', )
+    output = count( tsent, fword)
+    print(' *',fword,'*  appeared  *',output,'*  times in your entry.')

@@ -10,22 +10,20 @@ and one number to divide by (check). If check divides evenly into
 num, tell that to the user. If not, print a different 
 appropriate message.
 '''
-oe = input('number:',)
-oe = int(oe)
-if oe >= 4:
-    big = True
-else:
-    big = False
 
-if oe % 4 == 0 and big == True:
-    twon=input('enter 2 number',)
-    num = int(twon[0])
-    check = int(twon[1])
-    if check % num == 0:
-        print('clean')
-    else:
-        print('unclean')
-elif oe % 2 == 0:
-    print('even')
-else :
-    print('odd')
+def oe(inNum):
+    if inNum % 4 == 0 and inNum >= 4 :
+        num = int(input('First Number:', ))
+        check = int(input('Second Number:', ))
+        if check % num == 0:
+            print('clean')
+        else:
+            print('unclean')
+    elif inNum % 2 == 0 :
+        print('even')
+    else :
+        print('odd')
+
+if __name__=='__main__':
+    inNum=int(input('number:',))
+    oe(inNum)
