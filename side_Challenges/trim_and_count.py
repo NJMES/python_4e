@@ -27,13 +27,28 @@ Example Test Case:
 2nd Input: Banana
 Output: 4
 '''
+
 def count(tsent, fword):
     tsent = tsent.lower().replace('.','').replace('_', '').replace('-','').replace(',','').replace(' ','')
     o = tsent.count(fword.lower())
     return o
 
+def count2(tsent, fword):
+    tsent = tsent.lower()
+    spchar = '.,_- '
+    trim=''
+    for i in tsent:                     #run through tsent-string in sequence.
+        if i not in spchar:             #check if i not in special char, if its not in special char run below.
+            trim = trim + i             #trim get asign with existing trim string + new filtered i string.
+    print(trim)
+    o = trim.count(fword.lower())
+    return o
+
+
 if __name__=='__main__':
     tsent = input('Ent3r y0uR W3irD +3Xt H3re:', )
-    fword = input('What you looking for:', )
+    fword = input('What is the word you are looking for:', )
     output = count( tsent, fword)
+    #output = count2(tsent,fword)       #another way to filter.
     print(' *',fword,'*  appeared  *',output,'*  times in your entry.')
+    

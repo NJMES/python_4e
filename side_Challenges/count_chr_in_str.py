@@ -34,6 +34,9 @@ def crepchr(txt):
         #for key,value in cbox.items():   #print out (key:value) in multiple lines.
         #    print (key,':',value)
 
+
+
 if __name__=='__main__':
     txt=input('Enter Text to Count:', )
-    crepchr(txt)
+    #crepchr(txt)
+    crepchr2(txt)
