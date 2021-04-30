@@ -84,6 +84,6 @@ for o in range(0,int(m)):
         ballbox.remove(int(x))
        
     else:
-            print('nothing')
+        print('nothing')
 
 print(ballbox)      

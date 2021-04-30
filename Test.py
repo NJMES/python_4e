@@ -34,6 +34,8 @@ tax_percent =(tax_percent/100) * tip_percent
 total = meal_cost + tip_percent + tax_percent
 print(round(total)) #round up.
 '''
-t = int(input())
-for i in range(0, t):
-    print(i)
+dic = {'a':0,'b':0, 'c':1, }
+
+dic['c'] = dic.get('c',0)+1
+print(dic['c'])
+print(dic)
